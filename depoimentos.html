@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depoimentos — Gisele Trajes</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:wght@300;400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.svg" alt="Gisele Trajes" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span class="logo-text" style="display:none">Gisele Trajes</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="trajes.html" class="nav-link">Trajes</a>
+        <a href="depoimentos.html" class="nav-link active">Depoimentos</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+      <a href="https://wa.me/5511999998888?text=Olá!%20Vim%20pelo%20site%20da%20Gisele%20Trajes%20e%20gostaria%20de%20mais%20informações." target="_blank" class="btn btn-primary header-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+        Agende sua prova
+      </a>
+      <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Início</a>
+      <a href="trajes.html">Trajes</a>
+      <a href="depoimentos.html">Depoimentos</a>
+      <a href="contato.html">Contato</a>
+      <a href="https://wa.me/5511999998888" target="_blank" class="btn btn-primary">Agende sua prova</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero page-hero-short">
+      <div class="container page-hero-content">
+        <p class="section-eyebrow">Histórias Reais</p>
+        <h1 class="page-hero-title dark">Depoimentos</h1>
+        <p class="page-hero-sub dark">O que nossas clientes dizem sobre nós</p>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-bar">
+      <div class="container stats-inner">
+        <div class="stat">
+          <strong>+1.500</strong>
+          <span>Noivas atendidas</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>15 anos</strong>
+          <span>de experiência</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>5 estrelas</strong>
+          <span>avaliação média</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>98%</strong>
+          <span>indicariam para amigas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS EM DESTAQUE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Em destaque</p>
+          <h2 class="section-title">Histórias que nos enchem de orgulho</h2>
+        </div>
+
+        <div class="featured-testimonials">
+          <div class="featured-testimonial">
+            <div class="featured-img">
+              <img src="assets/images/dep-feat-1.jpg" alt="Amanda R." onerror="this.parentElement.classList.add('placeholder-img')">
+            </div>
+            <div class="featured-text">
+              <div class="stars">★★★★★</div>
+              <blockquote class="featured-quote">
+                "Encontrei o vestido dos meus sonhos na Gisele Trajes. O atendimento foi incrível, me senti acolhida do início ao fim. A equipe teve uma paciência incrível comigo e me ajudou a escolher o vestido perfeito para o meu estilo. No dia do casamento, me senti a noiva mais feliz do mundo."
+              </blockquote>
+              <cite class="featured-cite">
+                <strong>Amanda R.</strong> — Casamento em março de 2025
+              </cite>
+            </div>
+          </div>
+
+          <div class="featured-testimonial reverse">
+            <div class="featured-img">
+              <img src="assets/images/dep-feat-2.jpg" alt="Carla M." onerror="this.parentElement.classList.add('placeholder-img')">
+            </div>
+            <div class="featured-text">
+              <div class="stars">★★★★★</div>
+              <blockquote class="featured-quote">
+                "A Gisele e a equipe são simplesmente maravilhosas. Fui lá sem saber o que queria e saí sabendo exatamente qual era o meu vestido. O processo de customização foi perfeito, ajustaram tudo para ficar do jeito que eu queria. Recomendo de olhos fechados!"
+              </blockquote>
+              <cite class="featured-cite">
+                <strong>Carla M.</strong> — Casamento em junho de 2024
+              </cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRID DE DEPOIMENTOS -->
+    <section class="section bg-soft">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">O que dizem</p>
+          <h2 class="section-title">Mais histórias</h2>
+        </div>
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="assets/images/dep-1.jpg" alt="Bianca S." onerror="this.parentElement.classList.add('placeholder-avatar')">
+              </div>
+              <div>
+                <strong>Bianca S.</strong>
+                <span class="stars-sm">★★★★★</span>
+              </div>
+            </div>
+            <p>"Meu vestido de madrinha era absolutamente lindo. Recebi elogios a noite toda e me senti muito especial. Super recomendo para madrinhas!"</p>
+            <span class="testimonial-date">Janeiro de 2026</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="assets/images/dep-2.jpg" alt="Fernanda L." onerror="this.parentElement.classList.add('placeholder-avatar')">
+              </div>
+              <div>
+                <strong>Fernanda L.</strong>
+                <span class="stars-sm">★★★★★</span>
+              </div>
+            </div>
+            <p>"Fui para os 15 anos da minha filha e encontramos o vestido perfeito. A atenção ao detalhe e o carinho no atendimento foram impressionantes. Voltaremos para o casamento dela!"</p>
+            <span class="testimonial-date">Novembro de 2025</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="assets/images/dep-3.jpg" alt="Juliana P." onerror="this.parentElement.classList.add('placeholder-avatar')">
+              </div>
+              <div>
+                <strong>Juliana P.</strong>
+                <span class="stars-sm">★★★★★</span>
+              </div>
+            </div>
+            <p>"Fiz meu vestido de noiva aqui e foi uma experiência incrível. Desde o primeiro atendimento até a última prova, tudo foi perfeito. Me senti uma princesa!"</p>
+            <span class="testimonial-date">Setembro de 2025</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="assets/images/dep-4.jpg" alt="Marina T." onerror="this.parentElement.classList.add('placeholder-avatar')">
+              </div>
+              <div>
+                <strong>Marina T.</strong>
+                <span class="stars-sm">★★★★★</span>
+              </div>
+            </div>
+            <p>"Atendimento impecável, ambiente lindo e uma seleção de vestidos maravilhosa. A consultora de moda me ajudou a encontrar o vestido que valorizou meu corpo perfeitamente."</p>
+            <span class="testimonial-date">Agosto de 2025</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="assets/images/dep-5.jpg" alt="Tatiane R." onerror="this.parentElement.classList.add('placeholder-avatar')">
+              </div>
+              <div>
+                <strong>Tatiane R.</strong>
+                <span class="stars-sm">★★★★★</span>
+              </div>
+            </div>
+            <p>"Vim de outra cidade especialmente para conhecer o ateliê após muita indicação e valeu cada quilômetro! O vestido de noiva ficou simplesmente perfeito."</p>
+            <span class="testimonial-date">Junho de 2025</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <img src="assets/images/dep-6.jpg" alt="Renata C." onerror="this.parentElement.classList.add('placeholder-avatar')">
+              </div>
+              <div>
+                <strong>Renata C.</strong>
+                <span class="stars-sm">★★★★★</span>
+              </div>
+            </div>
+            <p>"A Gisele Trajes superou todas as minhas expectativas. O ambiente é acolhedor, a equipe é apaixonada pelo que faz e os vestidos são lindíssimos. Meu dia foi mágico!"</p>
+            <span class="testimonial-date">Abril de 2025</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOTOS DE CLIENTES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Momentos reais</p>
+          <h2 class="section-title">Nossas noivas</h2>
+          <p class="gallery-desc">Fotos reais de clientes que escolheram a Gisele Trajes para o dia mais especial.</p>
+        </div>
+        <div class="client-photos">
+          <div class="client-photo"><img src="assets/images/cliente-1.jpg" alt="Noiva 1" onerror="this.parentElement.classList.add('placeholder-img')"></div>
+          <div class="client-photo"><img src="assets/images/cliente-2.jpg" alt="Noiva 2" onerror="this.parentElement.classList.add('placeholder-img')"></div>
+          <div class="client-photo"><img src="assets/images/cliente-3.jpg" alt="Noiva 3" onerror="this.parentElement.classList.add('placeholder-img')"></div>
+          <div class="client-photo"><img src="assets/images/cliente-4.jpg" alt="Noiva 4" onerror="this.parentElement.classList.add('placeholder-img')"></div>
+          <div class="client-photo"><img src="assets/images/cliente-5.jpg" alt="Noiva 5" onerror="this.parentElement.classList.add('placeholder-img')"></div>
+          <div class="client-photo"><img src="assets/images/cliente-6.jpg" alt="Noiva 6" onerror="this.parentElement.classList.add('placeholder-img')"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section bg-primary-soft">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <p class="section-eyebrow">Sua vez</p>
+          <h2 class="section-title">Viva essa experiência</h2>
+          <p class="body-text">Junte-se às mais de 1.500 noivas que encontraram o vestido dos seus sonhos aqui.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="trajes.html" class="btn btn-primary btn-lg">Ver Trajes</a>
+          <a href="contato.html" class="btn btn-secondary btn-lg">Agende uma Visita</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.svg" alt="Gisele Trajes" class="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span class="logo-text footer-logo-text" style="display:none">Gisele Trajes</span>
+        <p class="footer-tagline"><em>"Para o seu sim mais bonito"</em></p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Endereço</h4>
+          <p>Rua das Acácias, 123 — Vila Madalena, São Paulo</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p>Tel: (11) 3456-7890</p>
+          <p>contato@giseletrajes.com.br</p>
+        </div>
+        <div class="footer-col">
+          <h4>Horário</h4>
+          <p>Terça a sexta: 10h às 19h</p>
+          <p>Sábado: 10h às 17h</p>
+          <p>Dom. e seg.: fechado</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Gisele Trajes. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="https://instagram.com/giseletrajes" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
