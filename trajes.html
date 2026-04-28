@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trajes — Gisele Trajes</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:wght@300;400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.svg" alt="Gisele Trajes" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span class="logo-text" style="display:none">Gisele Trajes</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="trajes.html" class="nav-link active">Trajes</a>
+        <a href="depoimentos.html" class="nav-link">Depoimentos</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+      <a href="https://wa.me/5511999998888?text=Olá!%20Vim%20pelo%20site%20da%20Gisele%20Trajes%20e%20gostaria%20de%20mais%20informações." target="_blank" class="btn btn-primary header-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+        Agende sua prova
+      </a>
+      <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Início</a>
+      <a href="trajes.html">Trajes</a>
+      <a href="depoimentos.html">Depoimentos</a>
+      <a href="contato.html">Contato</a>
+      <a href="https://wa.me/5511999998888" target="_blank" class="btn btn-primary">Agende sua prova</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img src="assets/images/trajes-hero.jpg" alt="" onerror="this.parentElement.classList.add('no-img')">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container page-hero-content">
+        <p class="section-eyebrow light">Nossa Coleção</p>
+        <h1 class="page-hero-title">Trajes</h1>
+        <p class="page-hero-sub">Cada peça conta uma história. Encontre a sua.</p>
+      </div>
+    </section>
+
+    <!-- FILTROS -->
+    <section class="filters-bar">
+      <div class="container filters-inner">
+        <button class="filter-btn active" onclick="filterCategory('all')">Todos</button>
+        <button class="filter-btn" onclick="filterCategory('noivas')">Noivas</button>
+        <button class="filter-btn" onclick="filterCategory('madrinhas')">Madrinhas</button>
+        <button class="filter-btn" onclick="filterCategory('debutantes')">Debutantes</button>
+      </div>
+    </section>
+
+    <!-- NOIVAS -->
+    <section class="gallery-section section" id="noivas" data-category="noivas">
+      <div class="container">
+        <div class="gallery-header">
+          <p class="section-eyebrow">Coleção</p>
+          <h2 class="section-title">Vestidos de Noiva</h2>
+          <p class="gallery-desc">Da minimalista à princesa, temos o vestido certo para o seu estilo e personalidade.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item tall">
+            <img src="assets/images/noiva-1.jpg" alt="Vestido de Noiva 1" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Coleção Clássica</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/noiva-2.jpg" alt="Vestido de Noiva 2" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Coleção Romântica</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/noiva-3.jpg" alt="Vestido de Noiva 3" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Coleção Moderna</span></div>
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/noiva-4.jpg" alt="Vestido de Noiva 4" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Coleção Exclusiva</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/noiva-5.jpg" alt="Vestido de Noiva 5" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Coleção Boho</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/noiva-6.jpg" alt="Vestido de Noiva 6" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Coleção Luxo</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MADRINHAS -->
+    <section class="gallery-section section bg-soft" id="madrinhas" data-category="madrinhas">
+      <div class="container">
+        <div class="gallery-header">
+          <p class="section-eyebrow">Coleção</p>
+          <h2 class="section-title">Vestidos de Madrinha</h2>
+          <p class="gallery-desc">Cores, cortes e tecidos pensados para harmonizar com o tema do casamento.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/images/madrinha-1.jpg" alt="Vestido de Madrinha 1" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Rose Gold</span></div>
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/madrinha-2.jpg" alt="Vestido de Madrinha 2" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Verde Sage</span></div>
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/madrinha-3.jpg" alt="Vestido de Madrinha 3" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Azul Serenity</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/madrinha-4.jpg" alt="Vestido de Madrinha 4" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Nude</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/madrinha-5.jpg" alt="Vestido de Madrinha 5" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Marsala</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/madrinha-6.jpg" alt="Vestido de Madrinha 6" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Champagne</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEBUTANTES -->
+    <section class="gallery-section section" id="debutantes" data-category="debutantes">
+      <div class="container">
+        <div class="gallery-header">
+          <p class="section-eyebrow">Coleção</p>
+          <h2 class="section-title">Vestidos de Debutante</h2>
+          <p class="gallery-desc">Para os 15 anos mais mágicos da sua vida, com toda a elegância e juventude que você merece.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/images/debutante-1.jpg" alt="Vestido de Debutante 1" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Princesa Rosa</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/debutante-2.jpg" alt="Vestido de Debutante 2" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Azul Royal</span></div>
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/debutante-3.jpg" alt="Vestido de Debutante 3" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Lilás Fantasia</span></div>
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/debutante-4.jpg" alt="Vestido de Debutante 4" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Vermelho Paixão</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/debutante-5.jpg" alt="Vestido de Debutante 5" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Branco Elegante</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/debutante-6.jpg" alt="Vestido de Debutante 6" onerror="this.parentElement.classList.add('placeholder-img')">
+            <div class="gallery-overlay"><span>Verde Esmeralda</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section bg-dark">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <p class="section-eyebrow light">Próximo passo</p>
+          <h2 class="section-title light">Gostou de alguma peça?</h2>
+          <p class="body-text light">Agende uma prova e venha experimentar pessoalmente. Nosso atendimento é exclusivo e com hora marcada.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="https://wa.me/5511999998888?text=Olá!%20Gostaria%20de%20agendar%20uma%20prova." target="_blank" class="btn btn-light btn-lg">Agendar via WhatsApp</a>
+          <a href="contato.html" class="btn btn-outline-light btn-lg">Enviar mensagem</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.svg" alt="Gisele Trajes" class="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span class="logo-text footer-logo-text" style="display:none">Gisele Trajes</span>
+        <p class="footer-tagline"><em>"Para o seu sim mais bonito"</em></p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Endereço</h4>
+          <p>Rua das Acácias, 123 — Vila Madalena, São Paulo</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p>Tel: (11) 3456-7890</p>
+          <p>contato@giseletrajes.com.br</p>
+        </div>
+        <div class="footer-col">
+          <h4>Horário</h4>
+          <p>Terça a sexta: 10h às 19h</p>
+          <p>Sábado: 10h às 17h</p>
+          <p>Dom. e seg.: fechado</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Gisele Trajes. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="https://instagram.com/giseletrajes" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
